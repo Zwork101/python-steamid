@@ -1,5 +1,4 @@
 import re
-import math
 
 
 class SteamID:
@@ -32,7 +31,7 @@ class SteamID:
         "WEB": 4
     }
 
-    TypeChars = {};
+    TypeChars = {}
     TypeChars[Type["INVALID"]] = 'I'
     TypeChars[Type["INDIVIDUAL"]] = 'U'
     TypeChars[Type["MULTISEAT"]] = 'M'
