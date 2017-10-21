@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="steamid",
-    version="1.0.1",
+    version="1.0.2",
     description="The python port of node-steamid (created by McKay)",
     url="https://github.com/Zwork101/python-steamid",
     author="Zwork101",

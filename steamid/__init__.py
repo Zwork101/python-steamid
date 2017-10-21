@@ -145,7 +145,7 @@ class SteamID:
 
     def isValid(self):
         if self.type <= SteamID.Type["INVALID"] or \
-                        self.Type > SteamID.Type["ANNO_USER"]:
+                        self.type > SteamID.Type["ANON_USER"]:
             return False
         if self.universe <= SteamID.Universe["INVALID"] or \
                         self.universe > SteamID.Universe["DEV"]:
