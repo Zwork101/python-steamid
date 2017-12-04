@@ -137,11 +137,14 @@ class SteamID:
     def getSteam3RenderedID(self):
         return self.steam3()
 
-    def toString(self):
+    def __str__(self):
         return str((self.universe << 56) | (self.type << 52) | (self.instance << 32) | self.accountid)
 
+    def __bool__(self):
+        return self.isValid()
+
     def getSteamID64(self):
-        self.toString()
+        return self.__str__()
 
     def isValid(self):
         if self.type <= SteamID.Type["INVALID"] or \

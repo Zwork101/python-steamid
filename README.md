@@ -78,7 +78,7 @@ my_id = SteamID('76561198269569899')
  * Input: -
  * Output: steam3id (str)
  
-### toString & getSteamID64
+### __str__ & getSteamID64
 `Creates a steam64 ID from the current SteamID object`
  * Object Method
  * Input: -
